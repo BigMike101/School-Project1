@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Projekt petla</title>
+    </head>
+    
+    <body>
+        <script>
+            var li = 0;
+            var suma=0;
+            var kon;
+            var srednia;
+            var i=0;
+            var konk='';
+            do{
+                li = prompt("podaj liczbę " + li + " By zakończyć wpisz 0");
+                kon = parseInt(li,10);
+                //console.log(kon);
+                if(Number.isNaN(kon)){
+                    console.log("niepodano liczby")
+                    continue
+                }
+                suma = suma + kon;
+                i++
+                konk = konk + li + "|";
+            }
+            while(li!=0);
+            srednia = suma / i;
+            document.write("Suma wynosi ->" + suma + "<BR>");
+            document.write("Średnia wynosi ->" + srednia + "<BR>");
+            document.write("Konkatenacja ->" + konk);
+
+        </script>
+
+    </body>
+
+</html>
